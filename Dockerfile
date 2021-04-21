@@ -26,4 +26,6 @@ RUN pip install pip --upgrade
 RUN pip install ansible
 RUN pip install docker boto3 botocore
 
-WORKDIR /work
+COPY entrypoint.sh /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]

@@ -2,4 +2,4 @@
 - hosts: localhost
   tasks:
     - name: site | hello world
-      shell: echo "Hi! Ansible is working"
+      shell: echo "Hi! Ansible is working from inside the container"
